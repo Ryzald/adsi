@@ -16,15 +16,21 @@
           <img src="../../images/logo.svg" alt="Logo" class="" />
         </div>
         <div class="flex items-center space-x-4 gap-12">
-          <button class="text-black font-medium hover:text-gray-400 text-2xl">
-            Catalog
-          </button>
-          <button class="text-black text-2xl font-medium hover:text-gray-400">
-            Cek Resi
-          </button>
-          <button class="text-black text-2xl font-medium hover:text-gray-400">
-            <img src="../../images/shop.svg" alt="" />
-          </button>
+          <a href="katalog.html">
+            <button class="text-black font-medium hover:text-gray-400 text-2xl">
+              Catalog
+            </button>
+          </a>
+          <a href="trackingg.html">
+            <button class="text-black text-2xl font-medium hover:text-gray-400">
+              Cek Resi
+            </button>
+          </a>
+          <a href="cart.html">
+            <button class="text-black text-2xl font-medium hover:text-gray-400">
+              <img src="../../images/shop.svg" alt="" />
+            </button>
+          </a>
 
           <button
             class="rounded-full bg-cyan-600 text-2xl text-white font-medium py-2 px-4 hover:bg-cyan-800"
@@ -34,10 +40,9 @@
         </div>
       </div>
     </nav>
-
     <!-- end navbar -->
 
-    <div class="flex w-11/12 mx-auto gap-5 mt-10">
+    <div class="flex w-11/12 mx-auto gap-5 mt-24c">
       <div class="flex-none w-[400px] h-14 bg-red-600">
         <a
           class="card flex bg-white mx-3 rounded-xl border border-slate-300 shadow-md mb-4"
@@ -107,9 +112,20 @@
       </div>
       <div class="flex-initial w-64 ..."></div>
       <div class="flex-initial w-[377px] bg-green-500">
-        <h3>Ringkasan Pembayaran</h3>
-        <h3>Ringkasan Pembayaran</h3>
-        <h3>Ringkasan Pembayaran</h3>
+        <h3 class="bg-blue-600 text-[20px] font-bold">Ringkasan Pembayaran</h3>
+
+        <h3 class="flex justify-between text-[18px] mt-2">
+          Subtotal <span class="ml-auto">Rp. 100.000</span>
+        </h3>
+        <h3 class="flex justify-between text-[18px] mt-2">
+          Pengiriman <span class="ml-auto">Rp. 0</span>
+        </h3>
+        <h3 class="flex justify-between text-[18px] mt-2">
+          Total <span class="ml-auto">Rp. 100.000</span>
+        </h3>
+        <div class="flex justify-center mt-4">
+          <button class="bg-red-500 py-3 rounded-xl w-4/5">Bayar</button>
+        </div>
       </div>
     </div>
   </body>
